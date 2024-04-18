@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import {fetchProducts} from '../services/ProductsFetch.jsx'
+
 import axios from 'axios'
 export const useFetchProducts = () =>{
    return useQuery({
