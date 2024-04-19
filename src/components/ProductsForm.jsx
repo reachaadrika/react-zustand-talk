@@ -9,7 +9,7 @@ const ProductsForm = () => {
   const [ProductTitle, setProductTitle] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  const { isLoading, data: ProductsFromApi, error } = useFetchProducts();
+  const { isLoading, data: ProductsFromApi, error  ,refetch , isFetching } = useFetchProducts();
 
   const handleProductSelect = (Product) => {
     setSelectedProduct(Product);
